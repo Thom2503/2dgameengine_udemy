@@ -10,6 +10,7 @@ class EntityManager
   private:
     std::vector<Entity*> entities;
   public:
+    void ClearData();
     void Update(float deltatime);
     void Render();
     bool HasNoEntities();
