@@ -2,12 +2,12 @@
 #ifndef TRANSFORMCOMPONENT_H
 #define TRANSFORMCOMPONENT_H
 
-#include "../EntityManager.h"
+#include "../src/EntityManager.h"
 #include "../../lib/glm/glm.hpp"
 #include <SDL2/SDL.h>
-#include "../Game.h"
+#include "../src/Game.h"
 
-class TransformComponent public Component
+class TransformComponent: public Component
 {
 public:
   glm::vec2 position;
@@ -16,7 +16,7 @@ public:
   int height;
   int scale;
 
-  TransformComponent(int posX, int posY, int velX, int VelY, int w, int h, int s)
+  TransformComponent(int posX, int posY, int velX, int velY, int w, int h, int s)
   {
     position = glm::vec2(posX, posY);
     velocity = glm::vec2(velX, velY);
