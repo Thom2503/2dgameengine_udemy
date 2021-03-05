@@ -6,7 +6,7 @@ Entity::Entity(EntityManager& manager): manager(manager)
   this->isActive = true;
 }
 
-Entity::Entity(EntityManager& manager, std:string name): manager(manager), name(name)
+Entity::Entity(EntityManager& manager, std::string name): manager(manager), name(name)
 {
   this->isActive = true;
 }
@@ -27,7 +27,7 @@ void Entity::Render()
   }
 }
 
-void Destroy()
+void Entity::Destroy()
 {
   this->isActive = false;
 }

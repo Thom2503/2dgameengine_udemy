@@ -17,7 +17,7 @@ void EntityManager::Update(float deltatime)
 {
   for (auto& entity: entities)
   {
-    entity->Update();
+    entity->Update(deltatime);
   }
 }
 
